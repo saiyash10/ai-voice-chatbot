@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Voice Chatbot</h1>
+        </header>
+        
+        <div class="chat-container">
+            <div id="chat-messages" class="chat-messages"></div>
+        </div>
+        
+        <div class="controls">
+            <button id="start-btn" class="btn btn-primary">🎤 Start Listening</button>
+            <button id="stop-btn" class="btn btn-secondary" disabled>⏹️ Stop</button>
+            <button id="mute-btn" class="btn btn-warning">🔊 Mute Bot</button>
+        </div>
+        
+        <div class="status">
+            <span id="status">Ready to listen...</span>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
